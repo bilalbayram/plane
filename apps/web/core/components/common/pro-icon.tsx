@@ -4,17 +4,11 @@
  * See the LICENSE file for details.
  */
 
-import type { FC } from "react";
-import { Crown } from "lucide-react";
-// helpers
-import { cn } from "@plane/utils";
-
 type TProIcon = {
   className?: string;
 };
 
-export function ProIcon(props: TProIcon) {
-  const { className } = props;
-
-  return <Crown className={cn("text-amber-400 inline-block h-3.5 w-3.5", className)} />;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function ProIcon(_props: TProIcon) {
+  return null;
 }

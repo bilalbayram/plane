@@ -4,9 +4,19 @@
  * See the LICENSE file for details.
  */
 
-// local imports
-import { WorkspaceActiveCyclesUpgrade } from "./workspace-active-cycles-upgrade";
+import { ContentWrapper } from "@plane/ui";
 
 export function WorkspaceActiveCyclesRoot() {
-  return <WorkspaceActiveCyclesUpgrade />;
+  return (
+    <ContentWrapper>
+      <div className="grid h-full place-items-center">
+        <div className="flex flex-col items-center gap-3 text-center">
+          <h3 className="text-lg font-semibold">No active cycles</h3>
+          <p className="text-sm text-tertiary">
+            Active cycles from all your projects will appear here. Go to a project and start a cycle to see it listed.
+          </p>
+        </div>
+      </div>
+    </ContentWrapper>
+  );
 }
